@@ -50,5 +50,5 @@ def save_decod(name, image, dimensions, vmax):
 for pgm in pgm_list:
     codewords, dimensions, vmax, code = get_image_info(pgm)
     decod = dictionary(codewords)
-    image = decode(code, decoder)
+    image = decode(code, decod)
     save_decod(pgm, image, dimensions, vmax)
