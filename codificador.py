@@ -30,4 +30,4 @@ for pgm in pgm_list:
     frequencies, total = huffman_cod.word_frequencies(image)
     codewords = huffman_cod.huffman_tree(frequencies)
     save_codf(pgm, image, codewords, dimensions, vmax)
-    print(f"{pgm} average code length: {huffman_encoder.avg_codeword(codewords, frequencies, total)}")
+    print(f"{pgm} average code length: {huffman_cod.avg_codeword(codewords, frequencies, total)}")
