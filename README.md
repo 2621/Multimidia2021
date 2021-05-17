@@ -12,6 +12,8 @@ Primeiro deve-se garantir que python3 está instalado na máquina. Em seguida:
 
 ->cd Multimidia2021
 
+->pip3 install numpy
+
 ->python3 codificador.py
 
 ->python3 decodificador.py
@@ -20,8 +22,8 @@ Primeiro deve-se garantir que python3 está instalado na máquina. Em seguida:
 
 
 ## Resultados e Comentários:
-Para a imagem da Lena, o comprimento médio obtido foi: 
+Para a imagem da Lena, o comprimento médio obtido foi: 7.467304229736328
 
-Para a imagem do babuíno, o comprimento médio obtido foi: 
+Para a imagem do babuíno, o comprimento médio obtido foi: 7.380626678466797
 
 Após o resultado obtido de psnr.py, obtemos, para ambas as imagens o valor infinito, o que faz sentido, uma vez que a compressão por Huffman é sem perdas e não há ruído nesse processo.
