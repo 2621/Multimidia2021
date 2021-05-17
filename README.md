@@ -19,5 +19,9 @@ Primeiro deve-se garantir que python3 está instalado na máquina. Em seguida:
 ->python3 psnr.py
 
 
-## Comentários:
-Após o resultado obtido de psnr.py, podemos dizer que, como a compressão por Huffman é sem perdas, não há ruído nesse processo e, por consequência, a razção PSNR tende ao infinito.
+## Resultados e Comentários:
+Para a imagem da Lena, o comprimento médio obtido foi: 
+
+Para a imagem do babuíno, o comprimento médio obtido foi: 
+
+Após o resultado obtido de psnr.py, obtemos, para ambas as imagens o valor infinito, o que faz sentido, uma vez que a compressão por Huffman é sem perdas e não há ruído nesse processo.
