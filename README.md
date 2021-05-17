@@ -26,4 +26,6 @@ Para a imagem da Lena, o comprimento médio obtido foi: 7.467304229736328
 
 Para a imagem do babuíno, o comprimento médio obtido foi: 7.380626678466797
 
+Os códigos binários de Huffman gerados pela codificação bem como as imagens PGM gerdas após a decodificação se encontram no diretório images após a execução desses códigos.
+
 Após o resultado obtido de psnr.py, obtemos, para ambas as imagens o valor infinito, o que faz sentido, uma vez que a compressão por Huffman é sem perdas e não há ruído nesse processo.
