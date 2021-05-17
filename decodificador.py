@@ -1,11 +1,11 @@
-from decoder_methods import image_scanner, huffman_decoder
+from decod_metodos import image_scanner, huffman_decod
 
 pgm_list = [
     "images/lena.pgm",
     "images/baboon.pgm"
 ]
 
-def save_decoded(name, image, dimensions, vmax):
+def save_decod(name, image, dimensions, vmax):
     image_copy = image.copy()
     content = f"P2\n{dimensions[0]} {dimensions[1]}\n{vmax}\n"
     for i in range(dimensions[0]):
@@ -20,6 +20,6 @@ def save_decoded(name, image, dimensions, vmax):
 
 for pgm in pgm_list:
     codewords, dimensions, vmax, code = image_scanner.get_image_info(pgm)
-    decoder = huffman_decoder.dictionary(codewords)
-    image = huffman_decoder.decode(code, decoder)
-    save_decoded(pgm, image, dimensions, vmax)
+    decod = huffman_decod.dictionary(codewords)
+    image = huffman_decod.decode(code, decoder)
+    save_decod(pgm, image, dimensions, vmax)
