@@ -35,9 +35,4 @@ def calculate_psnr(original, decoded, vmax):
 for pgm in pgm_list:
     image_original, _, vmax = get_image(pgm)
     image_decoded, *_ = get_image(f'{pgm}.huff.pgm')
-    # assert np.array_equal(image_original, image_decoded)
     print(f"{pgm} PSNR: {calculate_psnr(image_original, image_decoded, vmax)}")
-
-explanation = \
-    "\nAs the Huffman compression is lossless, the corrupting noise is zero then the ratio between signal and noise, or the PSNR, in other words, tends to infinite"
-print(explanation)
